@@ -1,0 +1,6 @@
+@echo off
+echo Installing dependencies...
+pip install -r requirements.txt
+echo Starting AI Job Description Analyzer...
+streamlit run app/streamlit_app.py
+pause

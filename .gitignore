@@ -1,0 +1,1 @@
+**/__pycache__/\n.streamlit/\ndata/*.json\noutputs/*.json\n*.pyc\n.env\nvenv/\nnode_modules/
