@@ -1,12 +1,17 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
+import sys
+
+# Add the project root to the python path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from preprocessing.text_cleaner import clean_text
 from analysis.skill_extractor import extract_skills
 from analysis.role_analyzer import detect_experience_level
 from generation.insight_generator import get_generator
 from data.data_manager import load_data, save_data
-import os
 
 # Set page config
 st.set_page_config(
